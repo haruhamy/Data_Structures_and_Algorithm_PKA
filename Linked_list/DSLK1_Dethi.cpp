@@ -4,8 +4,8 @@
 // Định nghĩa cấu trúc cho một nút trong danh sách liên kết
 typedef struct _listnode
 {
-    int num;
-    struct _listnode *next;
+    int num;                // Phần data
+    struct _listnode *next; // Phần con trỏ next, lưu ý có dấu *
 } ListNode;
 
 // Hàm tìm nút tại vị trí thứ i trong danh sách liên kết
@@ -23,8 +23,8 @@ ListNode *findNode(ListNode *head, int i)
     // Duyệt danh sách đến vị trí thứ i
     while (i > 0)
     {
-        cur = cur->next;
-        i = i - 1;
+        cur = cur->next; // Dịch node cur
+        i = i - 1;       // Giảm i để vòng lặp thực hiện i lần
 
         // Kiểm tra nếu nút hiện tại là NULL (vị trí không tồn tại trong danh sách)
         if (cur == NULL)
@@ -39,7 +39,7 @@ ListNode *findNode(ListNode *head, int i)
 // Hàm chèn một nút mới với giá trị value tại vị trí index trong danh sách liên kết
 void insertNode(ListNode **pHead, int index, int value)
 {
-    ListNode *cur, *newNode;
+    ListNode *cur, *newNode; // Khai báo một node
 
     // Kiểm tra nếu danh sách rỗng hoặc chèn tại đầu danh sách
     if (*pHead == NULL || index == 0)

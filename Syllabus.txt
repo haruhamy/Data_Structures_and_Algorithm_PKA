@@ -1,0 +1,38 @@
+Danh sách liên kết
+- ListNode *findNode(ListNode *head, int i)
+- void insertNode(ListNode **pHead, int index, int value)
+- void removeNode(ListNode **ptrHead, int index)
+- void printList(ListNode *head)
+
+Stack
+- typedef struct _listnode
+- typedef struct _linkedlist
+- typedef struct _stack
+- void insertNode(ListNode **ptrHead, int index, int value)
+- void removeNode(ListNode **ptrHead, int index)
+- bool isEmptyStack(Stack *s)
+- void push(Stack *s, int item)
+- int pop(Stack *s)
+
+Queue 
+- typedef struct _listnode
+- typedef struct _linkedlist
+- typedef struct _queue
+- void insertNode(ListNode **ptrHead, ListNode **ptrTail, int value)
+- void removeNode(ListNode **ptrHead, ListNode **ptrTail)
+- bool isEmptyQueue(Queue *q)
+- void enqueue(Queue *q, int item)
+- int dequeue(Queue *q)
+
+Sort
+- Bubble 
+- Insertion 
+- Selection
+- Merge
+- Quick
+- Heap
+
+BST
+- AVL
+
+Binary search
